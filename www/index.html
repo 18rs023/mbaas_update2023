@@ -32,7 +32,7 @@
         }
 
         function fetchAll() {
-            UTdata.fetchAll()
+            UTdata.order(key, true).fetchAll()
                 .then(function(results) {
                     let msg = "";
                     for (let i = 0; i < results.length; i++) {
